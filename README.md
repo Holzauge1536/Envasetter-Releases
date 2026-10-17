@@ -58,4 +58,4 @@ Before replacing program files, back up the complete installation. Preserve your
 
 EnVaSetter changes **persistent Windows environment variables**; it does not create an isolated environment for one terminal or application. Newly started applications pick up updated values. Restart already-running applications if they need to read the changes.
 
-For the application overview, see the [source repository README](https://github.com/Holzauge1536/Envasetter#readme). For version-specific changes and compatibility, always read the notes on the release page.
+For version-specific changes, known issues, and compatibility details, read the notes on the relevant [release page](https://github.com/Holzauge1536/Envasetter-Releases/releases).
