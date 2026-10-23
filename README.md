@@ -4,7 +4,7 @@
 
 Environment variables commonly hold information such as tool locations, SDK paths, and application configuration. EnVaSetter brings these values together in one desktop interface instead of making you hunt through Windows settings or edit each value separately.
 
-[Browse all releases](https://github.com/Holzauge1536/Envasetter-Releases/releases) | [Download the latest release](https://github.com/Holzauge1536/Envasetter-Releases/releases/latest) | [Source code](https://github.com/Holzauge1536/Envasetter)
+[Browse all releases](https://github.com/Holzauge1536/Envasetter-Releases/releases) | [Download the latest release](https://github.com/Holzauge1536/Envasetter-Releases/releases/latest)
 
 ## What you can do
 
