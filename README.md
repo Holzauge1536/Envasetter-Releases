@@ -6,6 +6,8 @@ Environment variables commonly hold information such as tool locations, SDK path
 
 [Browse all releases](https://github.com/Holzauge1536/Envasetter-Releases/releases) | [Download the latest release](https://github.com/Holzauge1536/Envasetter-Releases/releases/latest)
 
+If EnVaSetter is useful to you, you can [support its development on Ko-fi](https://ko-fi.com/envasetter).
+
 ## What you can do
 
 - **Manage User and Machine variables:** View the variables in separate lists, add new entries, edit values, or remove entries. Machine-level changes require administrator privileges.
@@ -23,6 +25,24 @@ Loading a set changes persistent Windows variables. Review its contents before a
 
 The first-start environment backup contains plaintext variable values and may include secrets. Keep it private. Restoring an older snapshot is not a full system rollback and may replace newer values; review each proposed change before confirming it.
 
+## Release information for v2.2.0
+
+- TortoiseSVN revision queries and revision-specific UI are retired. Historical
+  settings and set fields remain compatible; ordinary set loading is unchanged.
+- If an old first-start backup cannot be converted, it remains untouched and a
+  separate `CurrentEnvironment-<UTC timestamp>-<unique ID>.json` snapshot of today's
+  state is saved when possible. A warning explains the distinction. This snapshot
+  does not automatically replace the historical backup during restoration.
+- The Ko-fi menu (currently labeled "By me a Coffee") opens the optional support
+  page in your default browser. Donations do not unlock application features.
+- The updater shows elapsed time and processed/total file counts during backup and
+  installation, with corrected update-window ownership and STA handling.
+- Declining an automatic offer clears its persisted cache so it is not repeatedly
+  presented at every restart before the regular discovery interval.
+
+These changes apply to v2.2.0, not v2.1.0. This section is not a publication
+announcement; check the release page for the version currently available.
+
 ## Choose a download
 
 Each release provides an application ZIP for each supported architecture and a matching SHA-256 checksum sidecar:
@@ -38,6 +58,12 @@ The packages are self-contained; you do not need to install .NET separately. Rel
 2. Download the ZIP for your Windows architecture and its matching `.sha256` file.
 3. Extract the ZIP to a folder where you want to keep the application.
 4. Run `EnVaSetter.exe`.
+
+Choose a folder your Windows account can write to, such as a folder under your user
+profile. Settings and first-start backups are stored beside the executable (with
+existing configured data paths retained), not automatically redirected to AppData.
+Avoid protected folders such as `Program Files` for normal, non-administrator use.
+Administrator rights for editing Machine variables are a separate requirement.
 
 EnVaSetter edits persistent Windows environment variables. Editing Machine variables requires administrator privileges. Newly started applications pick up changed values; restart already-running applications if they need to see them.
 
