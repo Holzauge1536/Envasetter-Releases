@@ -25,7 +25,7 @@ Loading a set changes persistent Windows variables. Review its contents before a
 
 The first-start environment backup contains plaintext variable values and may include secrets. Keep it private. Restoring an older snapshot is not a full system rollback and may replace newer values; review each proposed change before confirming it.
 
-## Release information for v2.2.0
+## Release information for v2.2.1
 
 - TortoiseSVN revision queries and revision-specific UI are retired. Historical
   settings and set fields remain compatible; ordinary set loading is unchanged.
@@ -40,8 +40,13 @@ The first-start environment backup contains plaintext variable values and may in
 - Declining an automatic offer clears its persisted cache so it is not repeatedly
   presented at every restart before the regular discovery interval.
 
-These changes apply to v2.2.0, not v2.1.0. This section is not a publication
-announcement; check the release page for the version currently available.
+- Startup progress messages remain compatible with the v2.1.0 updater: absent
+  optional file counts are not sent as additional JSON fields. This fixes the
+  startup-confirmation failure found during the v2.2.0 live upgrade test.
+
+Version v2.2.0 was withdrawn to a draft. This section describes the v2.2.1
+source, not a publication announcement. Check the release page for the version
+currently available.
 
 ## Choose a download
 
